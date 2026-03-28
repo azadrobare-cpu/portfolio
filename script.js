@@ -58,11 +58,11 @@ const translations = {
         project_3_title: "System Monitor",
         project_3_desc: "Real-time system monitoring tool built with C++ for tracking CPU, memory, and network usage.",
         section_testimonials: "Testimonials & Recognition",
-        testimonial_1_text: "Azad's ability to understand complex system architectures and translate them into elegant Android solutions is remarkable. His code is clean, efficient, and maintainable.",
+        testimonial_1_text: "Jemal Aziz's ability to understand complex system architectures and translate them into elegant Android solutions is remarkable. His code is clean, efficient, and maintainable.",
         testimonial_1_role: "Senior Software Engineer",
-        testimonial_2_text: "Working with Azad on our Android project was a pleasure. His attention to UI/UX details and understanding of Material Design principles resulted in a beautiful, user-friendly app.",
+        testimonial_2_text: "Working with Jemal Aziz on our Android project was a pleasure. His attention to UI/UX details and understanding of Material Design principles resulted in a beautiful, user-friendly app.",
         testimonial_2_role: "Product Designer",
-        testimonial_3_text: "Azad demonstrates exceptional problem-solving skills and a deep understanding of computer systems. His contributions to our systems programming course were invaluable.",
+        testimonial_3_text: "Jemal Aziz demonstrates exceptional problem-solving skills and a deep understanding of computer systems. His contributions to our systems programming course were invaluable.",
         testimonial_3_role: "Computer Science Professor",
         section_blog: "Blog & Ideas",
         blog_1_title: "Modern Android Architecture: MVVM vs MVI",
@@ -74,7 +74,7 @@ const translations = {
         section_contact: "Get In Touch",
         contact_text: "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether you want to collaborate or just say hi, feel free to reach out!",
         btn_send_email: "Send Email",
-        footer_text: "&copy; 2025 Azad. Designed & Built with passion."
+        footer_text: "&copy; 2025 Jemal Aziz."
     },
     ku: {
         nav_about: "Derbar",
@@ -109,11 +109,11 @@ const translations = {
         project_3_title: "Çavdêriya Pergalê",
         project_3_desc: "Amûra çavdêriya pergalê ya rast-dem ku bi C++ hatî çêkirin ji bo şopandina CPU, bîr, û karanîna torê.",
         section_testimonials: "Pêşniyar & Naskirin",
-        testimonial_1_text: "Qabiliyeta Azad a têgihiştina mîmariyên pergalê yên tevlihev û wergerandina wan bo çareseriyên Android-ê yên elegant balkêş e. Koda wî paqij, bikêrhatî û hêsan e ji bo parastinê.",
+        testimonial_1_text: "Qabiliyeta Jemal Aziz a têgihiştina mîmariyên pergalê yên tevlihev û wergerandina wan bo çareseriyên Android-ê yên elegant balkêş e. Koda wî paqij, bikêrhatî û hêsan e ji bo parastinê.",
         testimonial_1_role: "Endezyarê Nermalavê yê Bilind",
-        testimonial_2_text: "Xebata bi Azad re li ser projeya me ya Android-ê kêfxweşiyek bû. Baldariya wî li ser hûrguliyên UI/UX û têgihiştina prensîbên Material Design bû sedema sepanek bedew û bikarhêner-dostane.",
+        testimonial_2_text: "Xebata bi Jemal Aziz re li ser projeya me ya Android-ê kêfxweşiyek bû. Baldariya wî li ser hûrguliyên UI/UX û têgihiştina prensîbên Material Design bû sedema sepanek bedew û bikarhêner-dostane.",
         testimonial_2_role: "Sêwirînerê Hilberê",
-        testimonial_3_text: "Azad jêhatîbûnên çareserkirina pirsgirêkan ên awarte û têgihiştinek kûr a pergalên komputerê nîşan dide. Beşdariyên wî di qursa me ya bernamesaziya pergalê de bêhempa bûn.",
+        testimonial_3_text: "Jemal Aziz jêhatîbûnên çareserkirina pirsgirêkan ên awarte û têgihiştinek kûr a pergalên komputerê nîşan dide. Beşdariyên wî di qursa me ya bernamesaziya pergalê de bêhempa bûn.",
         testimonial_3_role: "Profesorê Zanistên Komputerê",
         section_blog: "Blog & Raman",
         blog_1_title: "Mîmariya Android-a Nûjen: MVVM vs MVI",
@@ -125,7 +125,58 @@ const translations = {
         section_contact: "Têkilî Daynin",
         contact_text: "Ez her gav vekirî me ji bo nîqaşkirina projeyên nû, ramanên afirîner, an derfetên ku bibim beşek ji dîtina we. Ma hûn dixwazin hevkariyê bikin an tenê silav bidin, hûn dikarin têkilî daynin!",
         btn_send_email: "E-name Bişîne",
-        footer_text: "&copy; 2025 Azad. Bi hewes hatî sêwirandin û çêkirin."
+        footer_text: "&copy; 2025 Jemal Aziz."
+    },
+    ar: {
+        nav_about: "حول",
+        nav_skills: "المهارات",
+        nav_projects: "المشاريع",
+        nav_testimonials: "التوصيات",
+        nav_blog: "المدونة",
+        nav_contact: "اتصل بنا",
+        hero_greeting: "مرحباً، أنا",
+        hero_description: "مطور متعدد الشغف يبدع تجارب أندرويد مبتكرة باستخدام Kotlin ويبني هياكل أنظمة قوية. أحول المشاكل المعقدة إلى حلول أنيقة.",
+        hero_cta_primary: "شاهد أعمالي",
+        hero_cta_secondary: "تواصل معي",
+        section_about: "عني",
+        about_text_1: "أنا <strong>طالب هندسة أنظمة حاسوب</strong> بشغف لإنشاء تطبيقات جوال مؤثرة وفهم العمل المعقد لأنظمة الحاسوب.",
+        about_text_2: "كـ <strong>مطور أندرويد Kotlin</strong>، أتخصص في بناء تطبيقات حديثة تتمحور حول المستخدم باستخدام Jetpack Compose و Coroutines و Material Design 3.",
+        about_text_3: "بخلاف التطوير، أنا مفتون بـ <strong>بنية الأنظمة</strong>، و <strong>مبادئ تصميم UI/UX</strong>، والتقاطع بين الأجهزة والبرامج.",
+        section_skills: "المهارات والخبرات",
+        skill_android_title: "تطوير أندرويد",
+        skill_android_desc: "بناء تطبيقات أندرويد أصلية باستخدام Kotlin وأنماط البنية الحديثة",
+        skill_systems_title: "هندسة الأنظمة",
+        skill_systems_desc: "فهم عميق لبنية الحاسوب وأنظمة التشغيل",
+        skill_uiux_title: "تصميم UI/UX",
+        skill_uiux_desc: "إنشاء واجهات بديهية وجميلة مع التركيز على تجربة المستخدم",
+        section_projects: "مشاريع مميزة",
+        filter_all: "الكل",
+        project_1_title: "مدير المهام الذكي",
+        project_1_desc: "تطبيق إدارة مهام أندرويد حديث مع Jetpack Compose و Material Design 3. يتميز بالتصنيف الذكي وتذكيرات المواعيد النهائية.",
+        btn_view_code: "عرض الكود",
+        btn_live_demo: "عرض مباشر",
+        project_2_title: "تطبيق توقعات الطقس",
+        project_2_desc: "تطبيق طقس جميل مع توقعات في الوقت الفعلي ورسوم متحركة مذهلة. يتكامل مع OpenWeather API.",
+        project_3_title: "مراقب النظام",
+        project_3_desc: "أداة مراقبة نظام في الوقت الفعلي مبنية بـ C++ لتتبع وحدة المعالجة المركزية والذاكرة واستخدام الشبكة.",
+        section_testimonials: "التوصيات والاعترافات",
+        testimonial_1_text: "قدرة جمال عزيز على فهم بنيات الأنظمة المعقدة وترجمتها إلى حلول أندرويد أنيقة رائعة. كوده نظيف وفعال وقابل للصيانة.",
+        testimonial_1_role: "مهندس برمجيات أول",
+        testimonial_2_text: "كان العمل مع جمال عزيز في مشروع أندرويد الخاص بنا من دواعي سروري. اهتمامه بتفاصيل UI/UX وفهمه لمبادئ Material Design أدى إلى تطبيق جميل وسهل الاستخدام.",
+        testimonial_2_role: "مصمم منتجات",
+        testimonial_3_text: "يظهر جمال عزيز مهارات استثنائية في حل المشكلات وفهمًا عميقًا لأنظمة الكمبيوتر. مساهماته في دورة برمجة النظم لدينا كانت لا تقدر بثمن.",
+        testimonial_3_role: "أستاذ علوم الحاسوب",
+        section_blog: "المدونة والأفكار",
+        blog_1_title: "بنية أندرويد الحديثة: MVVM مقابل MVI",
+        blog_1_desc: "استكشاف أنماط الهندسة المعمارية في تطوير أندرويد ومتى يتم استخدام كل نهج.",
+        blog_2_title: "Kotlin Coroutines: ما وراء الأساسيات",
+        blog_2_desc: "الغوص العميق في أنماط coroutine المتقدمة والتزامن المنظم.",
+        blog_3_title: "فهم إدارة الذاكرة",
+        blog_3_desc: "كيفية تعامل أنظمة التشغيل مع تخصيص الذاكرة وتقنيات التحسين.",
+        section_contact: "تواصل معي",
+        contact_text: "أنا منفتح دائمًا لمناقشة المشاريع الجديدة والأفكار الإبداعية أو الفرص لأكون جزءًا من رؤيتك. سواء كنت ترغب في التعاون أو مجرد قول مرحبًا، فلا تتردد في التواصل!",
+        btn_send_email: "إرسال بريد إلكتروني",
+        footer_text: "&copy; 2025 جمال عزيز."
     }
 };
 
@@ -143,7 +194,16 @@ function updateLanguage(lang) {
     });
 
     // Update button text
-    langText.textContent = lang === 'en' ? 'KU' : 'EN';
+    if (lang === 'en') {
+        langText.textContent = 'KU';
+        document.body.classList.remove('arabic-layout');
+    } else if (lang === 'ku') {
+        langText.textContent = 'AR';
+        document.body.classList.remove('arabic-layout');
+    } else {
+        langText.textContent = 'EN';
+        document.body.classList.add('arabic-layout');
+    }
 
     // Save preference
     localStorage.setItem('language', lang);
@@ -156,7 +216,14 @@ updateLanguage(savedLang);
 
 langToggle.addEventListener('click', () => {
     const currentLang = localStorage.getItem('language') || 'en';
-    const newLang = currentLang === 'en' ? 'ku' : 'en';
+    let newLang;
+    if (currentLang === 'en') {
+        newLang = 'ku';
+    } else if (currentLang === 'ku') {
+        newLang = 'ar';
+    } else {
+        newLang = 'en';
+    }
     updateLanguage(newLang);
 });
 

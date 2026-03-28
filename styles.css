@@ -1302,7 +1302,7 @@ section {
         width: 100%;
         padding: 2rem;
         box-shadow: var(--shadow-lg);
-        transition: right var(--transition-normal);
+        transition: right var(--transition-normal), left var(--transition-normal);
     }
 
     .nav-menu.active {
@@ -1346,6 +1346,61 @@ section {
     .name-gradient {
         font-size: 2.5rem;
     }
+    
+    .skills-grid, .projects-grid, .testimonials-grid, .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero {
+        padding-top: 100px;
+    }
+}
 
+/* ===== Arabic Layout (RTL) ===== */
+.arabic-layout {
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+}
 
+.arabic-layout .logo {
+    direction: ltr;
+}
+
+.arabic-layout .logo-bracket {
+    display: inline-block;
+}
+
+.arabic-layout .nav-menu {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.arabic-layout .hero-text {
+    text-align: right;
+}
+
+.arabic-layout .about-text, .arabic-layout .contact-text {
+    text-align: right;
+}
+
+.arabic-layout .skill-card, .arabic-layout .project-card, .arabic-layout .blog-card, .arabic-layout .testimonial-card {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .arabic-layout .nav-menu {
+        right: auto;
+        left: -100%;
+        margin: 0;
+    }
+
+    .arabic-layout .nav-menu.active {
+        left: 0;
+        right: auto;
+    }
+    
+    .arabic-layout .nav-link {
+        text-align: right;
+        display: block;
+    }
 }
