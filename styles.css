@@ -336,8 +336,8 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
-    padding-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 60px;
 }
 
 .hero-background {
@@ -347,6 +347,7 @@ body {
     right: 0;
     bottom: 0;
     z-index: -1;
+    overflow: hidden;
 }
 
 .gradient-orb {
@@ -1295,6 +1296,11 @@ section {
     .skills-grid, .projects-grid, .testimonials-grid, .blog-grid {
         grid-template-columns: 1fr;
     }
+    
+    .hero {
+        align-items: flex-start;
+        padding-top: 140px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1352,10 +1358,6 @@ section {
 
     .name-gradient {
         font-size: 2.5rem;
-    }
-    
-    .hero {
-        padding-top: 100px;
     }
 }
 
