@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azad - Android Developer & Systems Engineer</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23667eea'/%3E%3Cstop offset='100%25' style='stop-color:%23764ba2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='20' cy='20' r='18' fill='none' stroke='url(%23g)' stroke-width='2'/%3E%3Ctext x='20' y='26' text-anchor='middle' fill='url(%23g)' font-size='18' font-weight='bold' font-family='monospace'%3EA%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Animated SVG Background -->
+    <svg class="animated-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" class="grad-stop-1" />
+                <stop offset="100%" class="grad-stop-2" />
+            </linearGradient>
+        </defs>
+        <path class="wave" fill="url(#grad1)"
+            d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+
+    <!-- Theme Toggle & Language Switcher -->
+    <div class="controls-wrapper">
+        <button class="lang-toggle neomorphic" id="langToggle" aria-label="Switch language">
+            <span class="lang-text">KU</span>
+        </button>
+        <button class="theme-toggle neomorphic" id="themeToggle" aria-label="Toggle theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <svg class="logo-animation" width="40" height="40" viewBox="0 0 40 40">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea" />
+                            <stop offset="100%" style="stop-color:#764ba2" />
+                        </linearGradient>
+                    </defs>
+                    <circle class="logo-circle" cx="20" cy="20" r="18" fill="none" stroke="url(#logoGrad)"
+                        stroke-width="2" />
+                    <text x="20" y="26" text-anchor="middle" fill="url(#logoGrad)" font-size="18" font-weight="bold"
+                        font-family="JetBrains Mono">A</text>
+                </svg>
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Azad</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="#testimonials" class="nav-link" data-i18n="nav_testimonials">Testimonials</a></li>
+                <li><a href="#blog" class="nav-link" data-i18n="nav_blog">Blog</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting" data-i18n="hero_greeting">Hi, I'm</span>
+                    <span class="name-gradient">Azad</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="typing-text">Computer Systems Engineer</span>
+                    <span class="cursor">|</span>
+                </p>
+                <p class="hero-description" data-i18n="hero_description">
+                    Multi-passionate developer crafting innovative Android experiences with Kotlin
+                    and building robust system architectures. Turning complex problems into elegant solutions.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span data-i18n="hero_cta_primary">View My Work</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span data-i18n="hero_cta_secondary">Get In Touch</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window glass-effect">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <span class="window-title">MainActivity.kt</span>
+                    </div>
+                    <div class="window-content">
+                        <pre><code><span class="code-keyword">class</span> <span class="code-class">MainActivity</span> : <span class="code-class">AppCompatActivity</span>() {
+    
+    <span class="code-keyword">override fun</span> <span class="code-function">onCreate</span>(savedInstanceState: <span class="code-class">Bundle</span>?) {
+        <span class="code-keyword">super</span>.onCreate(savedInstanceState)
+        
+        <span class="code-comment">// Building innovative solutions</span>
+        <span class="code-function">setContent</span> {
+            <span class="code-class">MaterialTheme</span> {
+                <span class="code-class">InnovativeApp</span>()
+            }
+        }
+    }
+    
+    <span class="code-keyword">private fun</span> <span class="code-function">InnovativeApp</span>() {
+        <span class="code-comment">// Crafting the future 🚀</span>
+    }
+}</code></pre>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="float-icon float-1">{ }</div>
+                    <div class="float-icon float-2">&lt;/&gt;</div>
+                    <div class="float-icon float-3">⚡</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                <span data-i18n="section_about">About Me</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about_text_1">I'm a <strong>Computer Systems Engineering student</strong> with a
+                        passion for creating impactful mobile applications and understanding the intricate workings of
+                        computer systems.</p>
+                    <p data-i18n="about_text_2">As an <strong>Android Kotlin Developer</strong>, I specialize in
+                        building modern, user-centric applications using Jetpack Compose, Coroutines, and Material
+                        Design 3.</p>
+                    <p data-i18n="about_text_3">Beyond development, I'm fascinated by <strong>system
+                            architecture</strong>, <strong>UI/UX design principles</strong>, and the intersection of
+                        hardware and software.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                <span data-i18n="section_skills">Skills & Expertise</span>
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card neomorphic">
+                    <div class="skill-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="skill_android_title">Android Development</h3>
+                    <p data-i18n="skill_android_desc">Building native Android apps with Kotlin and modern architecture
+                        patterns</p>
+                    <div class="skill-progress">
+                        <div class="progress-item">
+                            <span>Kotlin</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <span>Jetpack Compose</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <span>MVVM</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Coroutines</span>
+                        <span class="tag">Room</span>
+                        <span class="tag">Retrofit</span>
+                    </div>
+                </div>
+                <div class="skill-card neomorphic">
+                    <div class="skill-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="skill_systems_title">System Engineering</h3>
+                    <p data-i18n="skill_systems_desc">Deep understanding of computer architecture and operating systems
+                    </p>
+                    <div class="skill-progress">
+                        <div class="progress-item">
+                            <span>C/C++</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <span>Linux</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <span>Algorithms</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Data Structures</span>
+                        <span class="tag">Networks</span>
+                    </div>
+                </div>
+                <div class="skill-card neomorphic">
+                    <div class="skill-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                            <circle cx="11" cy="11" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="skill_uiux_title">UI/UX Design</h3>
+                    <p data-i18n="skill_uiux_desc">Creating intuitive, beautiful interfaces with focus on user
+                        experience</p>
+                    <div class="skill-progress">
+                        <div class="progress-item">
+                            <span>Material Design</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="93"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <span>Figma</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="87"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <span>Prototyping</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                <span data-i18n="section_projects">Featured Projects</span>
+            </h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+                <button class="filter-btn" data-filter="android">Android</button>
+                <button class="filter-btn" data-filter="systems">Systems</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-effect" data-category="android">
+                    <div class="project-image-wrapper">
+                        <div class="project-preview">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">⭐ 234</span>
+                            <span class="stat">🔱 45</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="project_1_title">Smart Task Manager</h3>
+                        <p data-i18n="project_1_desc">Modern Android task management app with Jetpack Compose and
+                            Material Design 3. Features smart categorization and deadline reminders.</p>
+                        <div class="project-tech">
+                            <span>Kotlin</span>
+                            <span>Jetpack Compose</span>
+                            <span>Room</span>
+                            <span>MVVM</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link-btn glass-btn" data-i18n="btn_view_code">View Code</a>
+                            <a href="#" class="project-link-btn glass-btn" data-i18n="btn_live_demo">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-effect" data-category="android">
+                    <div class="project-image-wrapper">
+                        <div class="project-preview">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            </svg>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">⭐ 189</span>
+                            <span class="stat">🔱 32</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="project_2_title">Weather Forecast App</h3>
+                        <p data-i18n="project_2_desc">Beautiful weather app with real-time forecasts and stunning
+                            animations. Integrates with OpenWeather API.</p>
+                        <div class="project-tech">
+                            <span>Kotlin</span>
+                            <span>Retrofit</span>
+                            <span>Coroutines</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link-btn glass-btn" data-i18n="btn_view_code">View Code</a>
+                            <a href="#" class="project-link-btn glass-btn" data-i18n="btn_live_demo">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-effect" data-category="systems">
+                    <div class="project-image-wrapper">
+                        <div class="project-preview">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">⭐ 156</span>
+                            <span class="stat">🔱 28</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="project_3_title">System Monitor</h3>
+                        <p data-i18n="project_3_desc">Real-time system monitoring tool built with C++ for tracking CPU,
+                            memory, and network usage.</p>
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>Linux</span>
+                            <span>System Calls</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link-btn glass-btn" data-i18n="btn_view_code">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                <span data-i18n="section_testimonials">Testimonials & Recognition</span>
+            </h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-effect">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text" data-i18n="testimonial_1_text">Azad's ability to understand complex
+                        system architectures and translate them into elegant Android solutions is remarkable. His code
+                        is clean, efficient, and maintainable.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <h4>John Doe</h4>
+                            <p data-i18n="testimonial_1_role">Senior Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-effect">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text" data-i18n="testimonial_2_text">Working with Azad on our Android project
+                        was a pleasure. His attention to UI/UX details and understanding of Material Design principles
+                        resulted in a beautiful, user-friendly app.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SK</div>
+                        <div class="author-info">
+                            <h4>Sarah Kim</h4>
+                            <p data-i18n="testimonial_2_role">Product Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-effect">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text" data-i18n="testimonial_3_text">Azad demonstrates exceptional
+                        problem-solving skills and a deep understanding of computer systems. His contributions to our
+                        systems programming course were invaluable.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MP</div>
+                        <div class="author-info">
+                            <h4>Dr. Michael Park</h4>
+                            <p data-i18n="testimonial_3_role">Computer Science Professor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span>
+                <span data-i18n="section_blog">Blog & Ideas</span>
+            </h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <span class="blog-date">Oct 2025</span>
+                    <h3 data-i18n="blog_1_title">Modern Android Architecture: MVVM vs MVI</h3>
+                    <p data-i18n="blog_1_desc">Exploring architecture patterns in Android development and when to use
+                        each approach.</p>
+                </article>
+                <article class="blog-card">
+                    <span class="blog-date">Sep 2025</span>
+                    <h3 data-i18n="blog_2_title">Kotlin Coroutines: Beyond the Basics</h3>
+                    <p data-i18n="blog_2_desc">Deep dive into advanced coroutine patterns and structured concurrency.
+                    </p>
+                </article>
+                <article class="blog-card">
+                    <span class="blog-date">Aug 2025</span>
+                    <h3 data-i18n="blog_3_title">Understanding Memory Management</h3>
+                    <p data-i18n="blog_3_desc">How operating systems handle memory allocation and optimization
+                        techniques.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">06.</span>
+                <span data-i18n="section_contact">Get In Touch</span>
+            </h2>
+            <div class="contact-content">
+                <p class="contact-text" data-i18n="contact_text">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                    vision.
+                    Whether you want to collaborate or just say hi, feel free to reach out!
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:azad@example.com" class="contact-btn">
+                        <span data-i18n="btn_send_email">Send Email</span>
+                    </a>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">GitHub</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer_text">&copy; 2025 Azad. Designed & Built with passion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
